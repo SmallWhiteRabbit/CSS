@@ -31,6 +31,8 @@
             color: aqua;
         }
         /*属性选择器以写法没有效果，这里的属性指哪些属性，据证明class是可以的*/
+        /*刚刚属性的写法有问题应该是标签上的属性如下写法，如下写，可以通过属性选择器改变color*/
+        /*<h1 class="h1" id="h1" color="green">辨不清回忆还是梦</h1>*/
         h1[class="h1"]{
             font-size: 30px;
         }
@@ -52,7 +54,8 @@
     </style>
 </head>
 <body>
-<h1 class="h1" id="h1">辨不清回忆还是梦</h1>
+<!--<h1 class="h1" id="h1" style="color: green">辨不清回忆还是梦</h1>-->
+<h1 class="h1" id="h1" color="green">辨不清回忆还是梦</h1>
 <p>
     <a>皎洁<span>月光</span></a>皎洁月光繁星闪醉人夜色
      <p class="mm">看看看</pcl>
