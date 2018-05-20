@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>属性选择器</title>
+</head>
+<body>
+<!--
+1.E[att] 选择具有attr属性的E元素。
+2.E[att="val"] 选择具有att属性且属性值等于val的E元素
+3.E[att~="val"] 选择具有att属性的元素，且元素值列表中有一个符合val的元素
+4.E[att^="val"] 选择E元素中有att属性，且以val开头的元素。
+5.E[att$="val"] 选择E元素中有att属性，且以val结尾的元素。
+6.E[att*="val"] 选择具有att属性且属性值包含val的字符串的E元素。
+-->
+
+<style>
+    p[color]{ color: green }
+    p[color="red"]{ font-size: 12px }
+    p[color~="re"]{ text-decoration: underline }
+    p[color^="r"]{ line-height: 30px }
+    p[color$= "d"]{ border: 1px solid saddlebrown }
+    p[color *= "d"] {margin: 5px}
+
+</style>
+</body>
+
+<p color="red">Work hard  to achieve your ambition.</p>
+<p>努力不让自己大的野心变成笑话。</p>
+
+</html>
