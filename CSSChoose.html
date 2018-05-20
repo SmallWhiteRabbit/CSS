@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>CSS选择器</title>
     <!--属性分类：-->
+    <!--通用选择器--><style>*{ padding: 5x; }</style>
     <!--1、元素选择器-->
     <style>
         h1{  font-size: 25px;  }
@@ -43,6 +44,13 @@
     <!--匹配所有紧随h1元素后的同级元素p,h1和p具有相同的父节点-->
     <style>
         h1 + p{color: deeppink;text-decoration: underline}
+    </style>
+    <!--9、伪类选择器-->
+    <style>
+        p:before{
+            content: "这是插入的一段话";
+            color: brown;
+        }
     </style>
 </head>
 <body>
